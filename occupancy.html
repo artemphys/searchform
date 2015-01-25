@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+    <!-- Подключим jQuery UI -->
+  </script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script>
+  $(function() {
+      $.datepicker.setDefaults( $.extend($.datepicker.regional["ru-RU"]));
+      $(".datePicker").datepicker();
+  });
+  </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  
+<body>
+<div class = "b-top-search-background"></div>
+<div class = "b-top-search-background-gradient"></div>
+<div class = "b-top-search">
+  <div id="search">
+    <input class="b-destination lightclick" id="search_field" placeholder="Место или название отеля" type="text" required="Введите пункт назначения" align="middle" onkeyup="search(this.value)">
+    <div id="search_result"></div>
+    <div id="search-clear">&#9587</div>
+  </div>
+  <input type="text" class="datePicker lightclick" id="checkin">
+  <input class="datePicker lightclick" id="checkout" type="text">
+  <button class="search">Найти</button>
+  <div class = "occupancy" id = "adult">
+    <select class = "lightclick">
+        <option value="str0">1 взрослый</option>
+        <option value="str1">2 взрослых</option>
+        <option value="str2">3 взрослых</option>
+        <option value="str3">4 взрослых</option>
+        <option value="str4">5 взрослых</option>
+        <option value="str5">6 взрослых</option>
+    </select>
+  </div>
+  <div class = "occupancy" id = "child">
+    <select class = "lightclick">
+       <option value="str0">без детей</option>
+       <option value="str1">и 1 ребенок</option>
+       <option value="str2">и 2 детей</option>
+       <option value="str3">и 3 детей</option>
+       <option value="str4">и 4 детей</option>
+    </select>
+  </div>
+  <div class = "occupancy" id = "age1">
+    <select class = "lightclick">
+    <option value="str0">0</option>
+    <option value="str1">1</option>
+    <option value="str2">2</option>
+    <option value="str3">3</option>
+    <option value="str4">4</option>
+    <option value="str5">5</option>
+    <option value="str6">6</option>
+    <option value="str7">7</option>
+    <option value="str8">8</option>
+    <option value="str9">9</option>
+    <option value="str10">10</option>
+    <option value="str11">11</option>
+    <option value="str12">12</option>
+    <option value="str13">13</option>
+    <option value="str14">14</option>
+    <option value="str15">15</option>
+    <option value="str16">16</option>
+    <option value="str17">17</option>
+    <option value="str18">18</option>
+  </select>
+  </div>
+  <div class = "occupancy" id = "age2">
+    <select class = "lightclick">
+    <option value="str0">0</option>
+    <option value="str1">1</option>
+    <option value="str2">2</option>
+    <option value="str3">3</option>
+    <option value="str4">4</option>
+    <option value="str5">5</option>
+    <option value="str6">6</option>
+    <option value="str7">7</option>
+    <option value="str8">8</option>
+    <option value="str9">9</option>
+    <option value="str10">10</option>
+    <option value="str11">11</option>
+    <option value="str12">12</option>
+    <option value="str13">13</option>
+    <option value="str14">14</option>
+    <option value="str15">15</option>
+    <option value="str16">16</option>
+    <option value="str17">17</option>
+    <option value="str18">18</option>
+   </select>
+  </div>
+  <div class = "occupancy" id = "age3">
+    <select class = "lightclick">
+    <option value="str0">0</option>
+    <option value="str1">1</option>
+    <option value="str2">2</option>
+    <option value="str3">3</option>
+    <option value="str4">4</option>
+    <option value="str5">5</option>
+    <option value="str6">6</option>
+    <option value="str7">7</option>
+    <option value="str8">8</option>
+    <option value="str9">9</option>
+    <option value="str10">10</option>
+    <option value="str11">11</option>
+    <option value="str12">12</option>
+    <option value="str13">13</option>
+    <option value="str14">14</option>
+    <option value="str15">15</option>
+    <option value="str16">16</option>
+    <option value="str17">17</option>
+    <option value="str18">18</option>
+  </select>
+  </div>
+  <div class = "occupancy" id = "age4">
+    <select class = "lightclick">
+         <option value="str0">0</option>
+         <option value="str1">1</option>
+         <option value="str2">2</option>
+         <option value="str3">3</option>
+         <option value="str4">4</option>
+         <option value="str5">5</option>
+         <option value="str6">6</option>
+         <option value="str7">7</option>
+         <option value="str8">8</option>
+         <option value="str9">9</option>
+         <option value="str10">10</option>
+         <option value="str11">11</option>
+         <option value="str12">12</option>
+         <option value="str13">13</option>
+         <option value="str14">14</option>
+         <option value="str15">15</option>
+         <option value="str16">16</option>
+         <option value="str17">17</option>
+         <option value="str18">18</option>
+     </select>
+  </div>
+</div>
+
+<script type="text/javascript" src="occupancy.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
